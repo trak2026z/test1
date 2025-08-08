@@ -16,8 +16,8 @@ export const ImageGallery: React.FC = () => {
       {images.map((ll, i) => {
         const date = new Date(ll.date);
         const year = date.getFullYear();
-        const month = (date.getMonth() + 1).toString().padStart('0');
-        const iday = date.getDate().toString().padStart('0');
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const iday = date.getDate().toString().padStart(2, '0');
         const imageUrl = `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${iday}/jpg/${ll.image}.jpg`;
         return <ImageCard key={i} imageUrl={imageUrl} date={ll.date} />
       })}
