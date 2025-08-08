@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-type ImageCardProps = {
+interface ImageCardProps {
   imageUrl: string;
   date: string;
-};
+}
 
-export const ImageCard: React.FC = ({ imageUrl, date }) => {
+export const ImageCard: React.FC<ImageCardProps> = ({ imageUrl, date }) => {
   return (
     <div className="image-card">
-      <img src={imageUrl } alt={`data: ${date}`} />
-      <p >{date}</p>
+      <img src={imageUrl} alt={date} />
+      <p>{date}</p>
     </div>
   );
 };
