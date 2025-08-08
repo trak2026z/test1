@@ -24,3 +24,5 @@ export const ImageGallery: React.FC = () => {
     </div>
   );
 };
+
+export default ImageGallery;

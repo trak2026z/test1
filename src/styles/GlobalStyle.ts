@@ -9,4 +9,4 @@ a { text-decoration: none; color: inherit; }
 const StyledContainer = styled.div`
 width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: ${emp.theme.colors.background};`
 
-export { GlobalStyle, StyledContainer };
+export default GlobalStyle;
