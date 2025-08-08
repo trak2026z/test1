@@ -5,8 +5,9 @@ import theme from './styles/theme';
 import { StyledContainer, StyledWrapper } from './styles/layout';
 import ImageGallery from './components/ImageGallery';
 
-const App: React.Fc<unknown> = () => {
-  return (\n    <ThemeProvider theme={theme}>
+const App: React.FC = () => {
+  return (
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <StyledContainer>
         <StyledWrapper>
