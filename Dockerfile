@@ -3,7 +3,7 @@ FROM node:18-alpine AS build
 
 WORKDIR /app
 COPY package.json package-lock.json* ./
-RUN npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps && npm install typescript@4.9.5 --save-dev --legacy-peer-deps
 COPY . .
 RUN npm run build
 
