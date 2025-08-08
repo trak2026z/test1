@@ -14,4 +14,4 @@ export async function fetchImagesByDate(date: string) {
     throw new Error("NASA Epic API - error");
   }
   return res.json();
-}
+} 
